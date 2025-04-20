@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    background: #081b29;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .calculator {
+    background: #0c1f35;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #0ef;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .display {
+    background: #081b29;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px #0ef inset;
+    text-align: right;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .screen-text {
+    color: #0ef;
+    font-size: 1.6rem;
+    word-wrap: break-word;
+    user-select: none;
+  }
+  
+  .result-text {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  button {
+    background: #081b29;
+    color: #0ef;
+    border: none;
+    padding: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #0ef, inset 0 0 8px #0ef;
+    transition: all 0.2s ease;
+  }
+  
+  button:hover {
+    background: #0c1f35;
+    color: #0ef;
+    box-shadow: 0 0 25px #0ef, inset 0 0 10px #0ef;
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 30px #0ef inset;
+  }
+  
+  .equal {
+    background: #0ef;
+    color: #0c1f35;
+    box-shadow: 0 0 15px #0ef, inset 0 0 8px #0ef;
+    transition: 0.2s ease;
+  }
+  
+  .equal:hover {
+    background: #0c1f35;
+    color: #0ef;
+    box-shadow: 0 0 25px #0ef, inset 0 0 10px #0ef;
+  }
+  
+  .equal:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 30px #0ef inset;
+  }
+  
